@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Supabase",
+      "description": "Plataforma de desarrollo full-stack",
+      "logo": "../public/Technologies/SupabaseLogo.png"
+    },
+    {
+      "id": 2,
+      "name": "Angular",
+      "description": "Framework de desarrollo web",
+      "logo": "../public/Technologies/AngularLogo.png"
+    },
+    {
+      "id": 3,
+      "name": "PostgreSQL",
+      "description": "Sistema de gestión de bases de datos relacionales",
+      "logo": "../public/Technologies/PostgresLogo.png"
+    }
+  ]
+  
