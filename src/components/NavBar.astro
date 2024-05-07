@@ -3,22 +3,47 @@
     <a class="btn btn-ghost text-xl">ToPractice</a>
   </div>
   <div class="flex-none">
-    <ul class="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
-      <li><a>Description</a></li>
-      <li><a>Concepts</a></li>
-      <li><a onclick="scrollToAnchor('#tech')" id="aTech">Technologies & Architecture</a></li>
+    <ul class="menu menu-horizontal px-1" id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Description</a></li>
+      <li><a href="#">Concepts</a></li>
+      <li>
+        <a onclick="scrollToAnchor('#tech')" id="aTech"
+          >Technologies & Architecture</a
+        >
+      </li>
       <li><a onclick="scrollToAnchor('#auhors')" id="aAuthors">Authors</a></li>
-      <li><a>Conclussions</a></li>
+      <li><a href="#">Conclusions</a></li>
       <li><a onclick="scrollToAnchor('#time')" id="aTime">Time</a></li>
     </ul>
   </div>
+
+  <button class="burger-btn" id="burger-btn">&#9776;</button>
+
+  <!-- Nuevo menú desplegable -->
+
+  <div>
+    <ul class="menu-dropdown z-50 hidden" id="dropdown-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Description</a></li>
+      <li><a href="#">Concepts</a></li>
+      <li>
+        <a onclick="scrollToAnchor('#tech')" id="aTech"
+          >Technologies & Architecture</a
+        >
+      </li>
+      <li><a onclick="scrollToAnchor('#auhors')" id="aAuthors">Authors</a></li>
+      <li><a href="#">Conclusions</a></li>
+      <li><a onclick="scrollToAnchor('#time')" id="aTime">Time</a></li>
+    </ul>
+  </div>
+  
 </div>
 
 <script>
   const aTime = document.getElementById("aTime") as HTMLAnchorElement;
   const aTech = document.getElementById("aTech") as HTMLAnchorElement;
-  const aAuthors = document.getElementById("aAuthors") as HTMLAnchorElement;  
+  const aAuthors = document.getElementById("aAuthors") as HTMLAnchorElement;
 
   aAuthors.addEventListener("click", () => {
     scrollToAnchor("#authors");
@@ -41,4 +66,31 @@
       });
     }
   }
+
+  const burgerBtn = document.getElementById("burger-btn");
+  const menu = document.getElementById("menu");
+  const dropdownMenu = document.getElementById("dropdown-menu");
+
+  burgerBtn?.addEventListener("click", () => {
+    menu?.classList.toggle("hidden");
+    dropdownMenu?.classList.toggle("hidden");
+  });
 </script>
+
+<style>
+  @media screen and (max-width: 768px) {
+    #menu {
+      display: none;
+    }
+
+    #burger-btn{
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    #burger-btn {
+      display: none;
+    }
+  }
+</style>

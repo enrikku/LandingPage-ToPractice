@@ -1,5 +1,7 @@
 ---
 import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
+
 import Technologies from "../components/Technologies.astro";
 import TimeChart from "@components/TimeChart.astro";
 import Authors from "@components/Authors.astro";
@@ -11,34 +13,37 @@ import Authors from "@components/Authors.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>ToPractice</title>
   </head>
   <body>
+
     <NavBar />
     <main class="w-full flex justify-center items-center flex-col">
-    
       <div class="w-full flex justify-center items-center" id="tech">
         <div class="w-5/6 bg-grayPerso">
           <Technologies />
         </div>
       </div>
-    
-      <div class="w-full flex justify-center items-center bg-gray-800" id="time">
+
+      <div
+        class="w-full flex justify-center items-center bg-gray-800"
+        id="time"
+      >
         <div class="w-5/6 flex justify-center items-center">
-          <TimeChart />     
+          <TimeChart />
         </div>
       </div>
-      
+
       <div class="w-full flex justify-center items-center" id="authors">
         <div class="w-5/6 bg-grayPerso">
           <Authors />
         </div>
       </div>
     </main>
+
+    <Footer />
   </body>
 </html>
-
-
 
 <style>
   /* Estilo de la barra de scroll */
@@ -56,4 +61,12 @@ import Authors from "@components/Authors.astro";
   body::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to bottom right, #777777 0%, #777777 100%);
   }
+
+  @media screen and (min-width: 300px) {
+  main {
+    width: 100% !important;
+    border: #777777 1px solid;
+    
+  }
+}
 </style>
