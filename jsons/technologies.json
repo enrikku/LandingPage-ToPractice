@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Supabase",
-    "description": "Supabase es una plataforma de desarrollo full-stack que proporciona herramientas y servicios para crear aplicaciones web y móviles. Está construido sobre PostgreSQL y ofrece una base de datos PostgreSQL gestionada, autenticación de usuario, almacenamiento de archivos y funciones sin servidor. Su objetivo es simplificar el proceso de desarrollo al proporcionar una infraestructura robusta y fácil de usar.",
+    "description": "Servicio de base de datos PostgreSQL",
     "logo": "/Technologies/SupabaseLogo.svg",
     "hoverColor": "hover:border-supabase",
     "link": "https://supabase.com/"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Angular",
-    "description": "Angular es un framework de desarrollo web de código abierto desarrollado y mantenido por Google. Es ampliamente utilizado para construir aplicaciones web de una sola página (SPA) y aplicaciones web progresivas (PWA). Angular utiliza el lenguaje TypeScript para escribir código y proporciona una estructura robusta y modular para desarrollar aplicaciones web complejas. Ofrece características como enlace de datos bidireccional, inyección de dependencias, enrutamiento y manejo de formularios.",
+    "description": "Framework para aplicaciones web",
     "logo": "/Technologies/AngularLogo.png",
     "hoverColor": "hover:border-angular",
     "link": "https://angular.io/"
@@ -18,14 +18,15 @@
   {
     "id": 3,
     "name": "PostgreSQL",
-    "description": "PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto y altamente escalable. Es conocido por su robustez, confiabilidad y capacidad para manejar grandes volúmenes de datos. PostgreSQL es compatible con múltiples plataformas y ofrece una amplia gama de características avanzadas, incluyendo soporte para tipos de datos complejos, consultas complejas, transacciones ACID, replicación y escalabilidad horizontal.",
+    "description": "Sistema de gestión de bases de datos relacional orientado a objetos",
     "logo": "/Technologies/PostgresLogo.svg",
-    "hoverColor": "hover:border-postgres"
+    "hoverColor": "hover:border-postgres",
+    "link": "https://www.postgresql.org/"
   },
   {
     "id": 4,
     "name": "Socket.io",
-    "description": "Socket.io es una biblioteca de JavaScript que permite la comunicación en tiempo real entre el cliente y el servidor a través del protocolo WebSocket. Facilita la construcción de aplicaciones web en las que la información debe actualizarse constantemente sin necesidad de recargar la página. Socket.io proporciona una capa de abstracción sobre WebSockets y también es compatible con otros mecanismos de transporte, como AJAX y Long Polling.",
+    "description": "Es una biblioteca basada en eventos para aplicaciones web en tiempo real",
     "logo": "/Technologies/SocketIOLogo.svg",
     "hoverColor": "hover:border-white",
     "link": "https://socket.io/"
@@ -33,7 +34,7 @@
   {
     "id": 5,
     "name": "Tailwind",
-    "description": "Tailwind CSS es un framework de CSS de utilidad que permite construir interfaces de usuario personalizadas de manera rápida y eficiente. A diferencia de otros frameworks de CSS que utilizan clases predefinidas, Tailwind proporciona un conjunto extenso de clases de utilidad que se pueden combinar para crear estilos únicos. Esto permite un alto grado de flexibilidad y personalización en el diseño de la interfaz de usuario, sin necesidad de escribir CSS ",
+    "description": "Es un framework de CSS de código abierto​ para el diseño de páginas web",
     "logo": "/Technologies/TailwindLogo.svg",
     "hoverColor": "hover:border-tailwind",
     "link": "https://tailwindcss.com/"
@@ -41,9 +42,26 @@
   {
     "id": 6,
     "name": "Node",
-    "description": "Node.js es un entorno de ejecución de JavaScript del lado del servidor que permite a los desarrolladores construir aplicaciones web escalables y de alto rendimiento. Utiliza el motor V8 de Google Chrome para ejecutar código JavaScript fuera del navegador. Node.js es conocido por su capacidad para manejar operaciones de entrada/salida de forma asíncrona y no bloqueante, lo que lo hace ideal para aplicaciones en tiempo real y basadas en eventos. Además, cuenta con un amplio ecosistema de paquetes y módulos a través de npm, el administrador de paquetes de Node.js.",
+    "description": "Entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor",
     "logo": "/Technologies/NodeLogo.svg",
     "hoverColor": "hover:border-node",
     "link": "https://nodejs.org/en/"
+  },
+  {
+    "id": 7,
+    "name": "Flowbite",
+    "description":"Es un conjunto de componentes de interfaz de usuario creados con las clases de utilidad de Tailwind CSS,",
+    "logo": "/Technologies/FlowbiteLogo.svg",
+    "hoverColor": "hover:border-white",
+    "link": "https://flowbite.com/"
+  },
+  {
+    "id": 8,
+    "name": "PHP",
+    "description": "Es un lenguaje de programación interpretado​ del lado del servidor y de uso general que se adapta especialmente al desarrollo web.",
+    "hoverColor": "hover:border-php",
+    "logo": "/Technologies/PHPLogo.svg",
+    "link": "https://www.php.net/"
   }
+
 ]

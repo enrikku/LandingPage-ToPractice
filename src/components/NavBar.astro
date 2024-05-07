@@ -1,4 +1,4 @@
-<div class="navbar bg-base-100 ">
+<div class="navbar bg-base-100 sticky top-0 z-50">
   <div class="flex-1">
     <a class="btn btn-ghost text-xl">ToPractice</a>
   </div>
@@ -7,10 +7,38 @@
       <li><a>Home</a></li>
       <li><a>Description</a></li>
       <li><a>Concepts</a></li>
-      <li><a>Technologies & Architecture</a></li>
-      <li><a>Author</a></li>
+      <li><a onclick="scrollToAnchor('#tech')" id="aTech">Technologies & Architecture</a></li>
+      <li><a onclick="scrollToAnchor('#auhors')" id="aAuthors">Authors</a></li>
       <li><a>Conclussions</a></li>
-      <li><a>Time</a></li>
+      <li><a onclick="scrollToAnchor('#time')" id="aTime">Time</a></li>
     </ul>
   </div>
 </div>
+
+<script>
+  const aTime = document.getElementById("aTime") as HTMLAnchorElement;
+  const aTech = document.getElementById("aTech") as HTMLAnchorElement;
+  const aAuthors = document.getElementById("aAuthors") as HTMLAnchorElement;  
+
+  aAuthors.addEventListener("click", () => {
+    scrollToAnchor("#authors");
+  });
+
+  aTime.addEventListener("click", () => {
+    scrollToAnchor("#time");
+  });
+
+  aTech.addEventListener("click", () => {
+    scrollToAnchor("#tech");
+  });
+
+  function scrollToAnchor(anchorId: any) {
+    const target = document.querySelector(anchorId);
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth", // Hace que el desplazamiento sea suave
+        block: "start", // Alinea la parte superior del objetivo al borde superior del contenedor
+      });
+    }
+  }
+</script>

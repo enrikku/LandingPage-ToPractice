@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const { addDynamicIconSelectors } = require('@iconify/tailwind')
+
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
@@ -9,6 +11,7 @@ export default {
 				'postgres': '#2f6792',
 				'tailwind': '#16becb',
 				'node': '#74b956',
+				'grayPerso' :"#1d232a"
 			},
 			borderColor: {
 				'supabase': '#43cc8e',
@@ -24,6 +27,7 @@ export default {
 	},
 	plugins: [
 		require('daisyui'),
-		require('tailwindcss-animated')
+		require('tailwindcss-animated'),
+		addDynamicIconSelectors()
 	],
 }

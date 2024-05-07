@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Adriá Martinez",
+        "role": "Developer",
+        "image": "/Authors/AdrianMartinez.png",
+        "github": "https://github.com/AdrianMartinez",
+        "linkedin": "https://www.linkedin.com/in/adrian-martinez-6a817a21b/"
+    },
+    {
+        "name": "Enric Cabeza",
+        "role": "Developer",
+        "image": "/Authors/EnricCabeza.png",
+        "github": "https://github.com/EnricCabeza",
+        "linkedin": "https://www.linkedin.com/in/enriccabeza/"
+    }
+]
