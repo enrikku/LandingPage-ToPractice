@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import Technologies from "../components/Technologies.astro";
 import TimeChart from "@components/TimeChart.astro";
 import Authors from "@components/Authors.astro";
+import Home from "@components/Home.astro";
 ---
 
 <html lang="en">
@@ -19,6 +20,11 @@ import Authors from "@components/Authors.astro";
 
     <NavBar />
     <main class="w-full flex justify-center items-center flex-col">
+      <Home />
+
+      <div>
+        <h1 class="text-9xl">Hola</h1>
+      </div>
       <div class="w-full flex justify-center items-center" id="tech">
         <div class="w-5/6 bg-grayPerso">
           <Technologies />
