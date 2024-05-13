@@ -6,6 +6,9 @@ import Technologies from "../components/Technologies.astro";
 import TimeChart from "@components/TimeChart.astro";
 import Authors from "@components/Authors.astro";
 import Home from "@components/Home.astro";
+import Description from "@components/Description.astro";
+import Architecture from "@components/Architecture.astro";
+import Conclustion from "@components/Conclustion.astro";
 ---
 
 <html lang="en">
@@ -17,31 +20,52 @@ import Home from "@components/Home.astro";
     <title>ToPractice</title>
   </head>
   <body>
-
     <NavBar />
     <main class="w-full flex justify-center items-center flex-col">
       <Home />
 
+      <Description />
+
+      
       <div>
-        <h1 class="text-9xl">Hola</h1>
+        <h1 class="text-7xl p-4 m-2" id="tech">Technologies</h1>
       </div>
-      <div class="w-full flex justify-center items-center" id="tech">
+      <div class="w-full flex justify-center items-center">
         <div class="w-5/6 bg-grayPerso">
           <Technologies />
         </div>
       </div>
 
+
+      <div class="w-full flex flex-col justify-center items-center bg-grayPerso2">
+        <div>
+          <h1 class="text-7xl p-4 m-2" id="arch">Architecture</h1>
+        </div>
+        <Architecture />
+      </div>
+
       <div
-        class="w-full flex justify-center items-center bg-gray-800"
-        id="time"
+        class="w-full flex flex-col justify-center items-center"
+        id="timeDiv"
       >
+        <div>
+          <h1 class="text-7xl p-4 m-2" id="time">Time</h1>
+        </div>
         <div class="w-5/6 flex justify-center items-center">
           <TimeChart />
         </div>
       </div>
 
-      <div class="w-full flex justify-center items-center" id="authors">
-        <div class="w-5/6 bg-grayPerso">
+      <div class="w-full flex flex-col justify-center items-center bg-grayPerso2 h-screen">
+        <h1 class="text-7xl p-4 m-2" id="conc">Conclusions</h1>
+        <Conclustion />
+      </div>
+
+      <div class="w-full flex flex-col justify-center items-center" id="authors">
+        <div>
+          <h1 class="text-7xl p-4 m-2" id="tech">Authors</h1>
+        </div>
+        <div class="w-5/6">
           <Authors />
         </div>
       </div>
@@ -69,10 +93,14 @@ import Home from "@components/Home.astro";
   }
 
   @media screen and (min-width: 300px) {
-  main {
-    width: 100% !important;
-    border: #777777 1px solid;
-    
+    main {
+      width: 100% !important;
+    }
+
+    #timeDiv {
+      width: 100% !important;
+    }
   }
-}
+
+
 </style>

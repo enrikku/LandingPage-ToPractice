@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Supabase",
-    "description": "Servicio de base de datos PostgreSQL",
+    "description": "PostgreSQL database service",
     "logo": "/Technologies/SupabaseLogo.svg",
     "hoverColor": "hover:border-supabase",
     "link": "https://supabase.com/"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Angular",
-    "description": "Framework para aplicaciones web",
+    "description": "Framework for web applications",
     "logo": "/Technologies/AngularLogo.png",
     "hoverColor": "hover:border-angular",
     "link": "https://angular.io/"
@@ -18,50 +18,50 @@
   {
     "id": 3,
     "name": "PostgreSQL",
-    "description": "Sistema de gestión de bases de datos relacional orientado a objetos",
+    "description": "Object-oriented relational database management system",
     "logo": "/Technologies/PostgresLogo.svg",
-    "hoverColor": "hover:border-postgres",
     "link": "https://www.postgresql.org/"
   },
   {
     "id": 4,
     "name": "Socket.io",
-    "description": "Es una biblioteca basada en eventos para aplicaciones web en tiempo real",
+    "description": "Is an event-based library for real-time web applications",
     "logo": "/Technologies/SocketIOLogo.svg",
-    "hoverColor": "hover:border-white",
     "link": "https://socket.io/"
   },
   {
     "id": 5,
     "name": "Tailwind",
-    "description": "Es un framework de CSS de código abierto​ para el diseño de páginas web",
+    "description": "It is an open source CSS framework for web page design",
     "logo": "/Technologies/TailwindLogo.svg",
-    "hoverColor": "hover:border-tailwind",
     "link": "https://tailwindcss.com/"
   },
   {
     "id": 6,
     "name": "Node",
-    "description": "Entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor",
+    "description": "Cross-platform, open-source, run-time environment for the server layer",
     "logo": "/Technologies/NodeLogo.svg",
-    "hoverColor": "hover:border-node",
     "link": "https://nodejs.org/en/"
   },
   {
     "id": 7,
     "name": "Flowbite",
-    "description":"Es un conjunto de componentes de interfaz de usuario creados con las clases de utilidad de Tailwind CSS,",
+    "description":"It is a set of user interface components created with the Tailwind CSS utility classes",
     "logo": "/Technologies/FlowbiteLogo.svg",
-    "hoverColor": "hover:border-white",
     "link": "https://flowbite.com/"
   },
   {
     "id": 8,
     "name": "PHP",
-    "description": "Es un lenguaje de programación interpretado​ del lado del servidor y de uso general que se adapta especialmente al desarrollo web.",
-    "hoverColor": "hover:border-php",
+    "description": "It is a server-side interpreted and general-purpose programming language that is especially suited to web development.",
     "logo": "/Technologies/PHPLogo.svg",
     "link": "https://www.php.net/"
+  },{
+    "id": 9,
+    "name": "Vercel",
+    "description": "Open source web development platform",
+    "logo": "/Technologies/VercelLogo.webp",
+    "link": "https://vercel.com/"
   }
 
 ]

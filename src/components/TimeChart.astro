@@ -2,8 +2,8 @@
 
 ---
 
-<div class="w-1/2 flex justify-center items-center ">
-  <canvas id="myChart"></canvas>
+<div class="w-1/2 flex justify-center items-center h-screen" id="a">
+  <canvas id="myChart" class="mobile-chart"></canvas>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -35,3 +35,15 @@
     },
   });
 </script>
+
+<style>
+  @media (max-width: 640px) {
+    .mobile-chart {
+      width: 100vw;
+      height: 80vw;
+    }
+    #a{
+      width: 100vw;
+    }
+  }
+</style>

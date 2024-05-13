@@ -4,15 +4,14 @@ export interface Props {
   name: string;
   description: string;
   logo: string;
-  hoverColor: string;
   link: string;
 }
 
-const { name, description, logo, hoverColor, link } = Astro.props;
+const { name, description, logo, link } = Astro.props;
 ---
 
 <div
-  class={`max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 animate-fade mb-5 sm:m-5 ${hoverColor}`}
+  class="max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 animate-fade mb-5 sm:m-5"
   id="card"
 >
   <a href={link} target="_blank" class="flex items-center justify-center">

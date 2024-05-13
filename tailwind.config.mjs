@@ -11,7 +11,8 @@ export default {
 				'postgres': '#2f6792',
 				'tailwind': '#16becb',
 				'node': '#74b956',
-				'grayPerso' :"#1d232a"
+				'grayPerso' :"#1d232a",
+				'grayPerso2' :"#1f2937"
 			},
 			borderColor: {
 				'supabase': '#43cc8e',
