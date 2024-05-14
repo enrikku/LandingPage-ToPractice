@@ -1,51 +1,17 @@
-<!-- <div class="navbar bg-base-100 sticky top-0 z-50">
-  <div class="flex-1">
-    <a class="btn btn-ghost text-xl" target="_blank" href="https://to-practice.vercel.app/">ToPractice</a>
-  </div>
-  <div class="flex-none">
-    <ul class="menu menu-horizontal px-1" id="menu">
-      <li><a onclick="scrollToAnchor('#home')" id="aHome">Home</a></li>
-      <li><a onclick="scrollToAnchor('#desc')" id="aDesc">Description</a></li>
-      <li><a onclick="scrollToAnchor('#tech')" id="aTech">Technologies & Architecture</a></li>
-      <li><a onclick="scrollToAnchor('#time')" id="aTime">Time</a></li>
-      <li><a onclick="scrollToAnchor('#conc')" id="aConc">Conclusions</a></li>
-      <li><a onclick="scrollToAnchor('#auhors')" id="aAuthors">Authors</a></li>
-    </ul>
-  </div>
-
-  <button class="burger-btn" id="burger-btn">&#9776;</button>
-
-
-  <div>
-    <ul class="menu-dropdown z-50 hidden" id="dropdown-menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Description</a></li>
-      <li><a href="#">Concepts</a></li>
-      <li>
-        <a onclick="scrollToAnchor('#tech')" id="aTech"
-          >Technologies & Architecture</a
-        >
-      </li>
-      <li><a onclick="scrollToAnchor('#auhors')" id="aAuthors">Authors</a></li>
-      <li><a href="#">Conclusions</a></li>
-      <li><a onclick="scrollToAnchor('#time')" id="aTime">Time</a></li>
-    </ul>
-  </div>
-  
-</div> -->
 <nav class="bg-base-100 sticky top-0 z-50">
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
   >
-    <a
+    <!-- <a
       href="https://topractice.deno.dev/#/iniciar-sesions"
-      class="flex items-center space-x-3 rtl:space-x-reverse"
-    >
-      <span
-        class="self-center text-2xl font-semibold whitespace-nowrap text-white"
-        >ToPractice</span
-      >
-    </a>
+      class="flex items-center space-x-3 rtl:space-x-reverse">
+      
+      <div class="self-center text-2xl font-semibold whitespace-nowrap text-white border w-2/12 h-2/6">
+        <img src="/logoToPractice.png" class="" alt="" />
+      </div>
+    
+    </a> -->
+    
     <button
       data-collapse-toggle="navbar-default"
       type="button"
@@ -71,28 +37,43 @@
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul
-        class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-gray-700"
+        class="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 border-gray-700"
       >
+      <li>
+        <a
+      href="https://topractice.deno.dev/#/iniciar-sesions"
+      class="flex items-center space-x-3 rtl:space-x-reverse">
+      
+      <div class="self-center text-2xl font-semibold whitespace-nowrap text-white w-2/12 h-2/6">
+        <img src="/logoToPractice.png" class="" alt="" />
+      </div>
+    
+    </a>
+      </li>
         <li>
           <a onclick="scrollToAnchor('#home')" id="aHome" class="cursor-pointer"
-            >Home</a>
+            >Home</a
+          >
         </li>
         <li>
           <a onclick="scrollToAnchor('#desc')" id="aDesc" class="cursor-pointer"
-            >Description</a>
+            >Description</a
+          >
         </li>
         <li>
           <a onclick="scrollToAnchor('#tech')" id="aTech" class="cursor-pointer"
-            >Technologies & Architecture</a
+            >Technologies</a
           >
         </li>
         <li>
           <a onclick="scrollToAnchor('#time')" id="aTime" class="cursor-pointer"
-            >Time</a>
+            >Time</a
+          >
         </li>
         <li>
           <a onclick="scrollToAnchor('#conc')" id="aConc" class="cursor-pointer"
-            >Conclusions</a>
+            >Conclusions</a
+          >
         </li>
         <li>
           <a
@@ -122,7 +103,7 @@
       const expanded = button.getAttribute("aria-expanded") === "true" || false;
 
       //button.setAttribute("aria-expanded", !expanded);
-      
+
       menu.classList.toggle("hidden");
     });
   }

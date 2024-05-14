@@ -2,9 +2,11 @@
 
 ---
 
-<div class="w-1/2 flex justify-center items-center h-screen" id="a">
+<div class="w-1/2 flex justify-center items-center h-screen flex-col" id="a">
   <canvas id="myChart" class="mobile-chart"></canvas>
+  <p class="text-white text-3xl text-center mt-5 font-bold mb-5">Total hours: 423</p>
 </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
@@ -15,21 +17,29 @@
   new Chart(ctx, {
     type: "pie",
     data: {
-      labels: ["Investigacion", "Diseño BBDD", "Frontend", "Backend"],
+      labels: ["Investigacion", "Diseño BBDD", "Frontend", "Backend", "Documentacion", "Testing"],
       datasets: [
         {
           label: "Horas",
-          data: [12, 15, 38, 139],
+          data: [30, 45, 113, 165, 42, 28],
           borderWidth: 2,
           hoverBorderColor: "black",
-          backgroundColor: ["#F331D9", "#43cc8e", "#de002d", "#74b956"],
+          backgroundColor: ["#F331D9", "#43cc8e", "#de002d", "#74b956", "#f9ca24", "#f93a14"],
         },
       ],
     },
     options: {
       plugins: {
         legend: {
-          position: "right",
+          position: "bottom",
+          
+          labels: {
+            usePointStyle: true,
+            font: {
+              size: 15,
+            },
+            padding: 30,
+          }
         },
       },
     },

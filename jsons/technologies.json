@@ -62,6 +62,13 @@
     "description": "Open source web development platform",
     "logo": "/Technologies/VercelLogo.webp",
     "link": "https://vercel.com/"
+  },
+  {
+    "id": 10,
+    "name": "Astro",
+    "description": "Is a UI (user interface) framework for building web applications with HTML, CSS and JavaScript",
+    "logo": "/Technologies/AstroLogo.webp",
+    "link": "https://astro.build/"
   }
 
 ]
