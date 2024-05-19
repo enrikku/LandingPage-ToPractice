@@ -1,6 +1,6 @@
 <section id="home">
   <h1 class="centered">Welcome <span class="text-primary">To</span>Practice</h1>
-  <p>
+  <p class="centered">
     Find your professional path with our internships! Your door to the future of
     work is here.
   </p>
@@ -11,6 +11,26 @@
 </section>
 
 <style>
+
+
+  @media screen and (max-width: 640px) {
+    section{
+      border: 1px solid red;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+
+    h1,p{
+      margin-left: 15%;
+    }
+  }
+
+
+
   section {
     position: relative;
     width: 100%;
