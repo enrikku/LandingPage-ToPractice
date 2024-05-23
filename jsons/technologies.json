@@ -1,13 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Supabase",
-    "description": "PostgreSQL database service",
-    "logo": "/Technologies/SupabaseLogo.svg",
-    "hoverColor": "hover:border-supabase",
-    "link": "https://supabase.com/"
-  },
-  {
     "id": 2,
     "name": "Angular",
     "description": "Framework for web applications",
@@ -16,19 +8,28 @@
     "link": "https://angular.io/"
   },
   {
+    "id": 10,
+    "name": "Astro",
+    "description": "Is a UI (user interface) framework for building web applications with HTML, CSS and JavaScript",
+    "logo": "/Technologies/AstroLogo.webp",
+    "link": "https://astro.build/"
+  },
+  {
+    "id": 1,
+    "name": "Supabase",
+    "description": "PostgreSQL database service",
+    "logo": "/Technologies/SupabaseLogo.svg",
+    "hoverColor": "hover:border-supabase",
+    "link": "https://supabase.com/"
+  },
+  {
     "id": 3,
     "name": "PostgreSQL",
     "description": "Object-oriented relational database management system",
     "logo": "/Technologies/PostgresLogo.svg",
     "link": "https://www.postgresql.org/"
   },
-  {
-    "id": 4,
-    "name": "Socket.io",
-    "description": "Is an event-based library for real-time web applications",
-    "logo": "/Technologies/SocketIOLogo.svg",
-    "link": "https://socket.io/"
-  },
+
   {
     "id": 5,
     "name": "Tailwind",
@@ -36,6 +37,15 @@
     "logo": "/Technologies/TailwindLogo.svg",
     "link": "https://tailwindcss.com/"
   },
+
+  {
+    "id": 7,
+    "name": "Flowbite",
+    "description":"It is a set of user interface components created with the Tailwind CSS utility classes",
+    "logo": "/Technologies/FlowbiteLogo.svg",
+    "link": "https://flowbite.com/"
+  },
+
   {
     "id": 6,
     "name": "Node",
@@ -44,11 +54,11 @@
     "link": "https://nodejs.org/en/"
   },
   {
-    "id": 7,
-    "name": "Flowbite",
-    "description":"It is a set of user interface components created with the Tailwind CSS utility classes",
-    "logo": "/Technologies/FlowbiteLogo.svg",
-    "link": "https://flowbite.com/"
+    "id": 4,
+    "name": "Socket.io",
+    "description": "Is an event-based library for real-time web applications",
+    "logo": "/Technologies/SocketIOLogo.svg",
+    "link": "https://socket.io/"
   },
   {
     "id": 8,
@@ -62,13 +72,6 @@
     "description": "Open source web development platform",
     "logo": "/Technologies/VercelLogo.webp",
     "link": "https://vercel.com/"
-  },
-  {
-    "id": 10,
-    "name": "Astro",
-    "description": "Is a UI (user interface) framework for building web applications with HTML, CSS and JavaScript",
-    "logo": "/Technologies/AstroLogo.webp",
-    "link": "https://astro.build/"
   }
 
 ]
